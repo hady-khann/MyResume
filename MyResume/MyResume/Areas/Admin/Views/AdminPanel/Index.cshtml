@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/_Layout.cshtml";
+}
+
+
+<html>
+<head></head>
+<body style="background-image: url('~/wwwroot/img/bg1.jpg');">
+
+
+   <a asp-area="" asp-action="index" asp-controller="home" style="position:absolute;top:2%;right:2%;border:solid 2px;">بازگشت به خانه</a>
+
+    <div style="margin-top:10%;margin-left:20%;">
+        <div class="row">
+            <div class="card border col-md-4" style="width: 18rem;border-width:4px">
+                <div class="card-body">
+                    <br /><br />
+                    <a asp-controller="Articles" asp-action="Index"><h1>مدیریت مقالات</h1></a>
+                    <br /><br />
+                </div>
+            </div>
+
+            <div class="card border col-md-4" style="width: 18rem;border-width:4px">
+                <div class="card-body">
+                    <br /><br />
+                    <a asp-controller="Skills" asp-action="Index"><h1>مدیریت مهارت ها</h1> </a>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="card border col-md-4" style="width: 18rem;border-width:4px">
+                <div class="card-body">
+                    <br /><br />
+                    <a asp-controller="Educations" asp-action="Index"><h1>مدیریت تحصیلات</h1></a>
+                    <br /><br />
+                </div>
+            </div>
+
+            <div class="card border col-md-4" style="width: 18rem;border-width:4px">
+                <div class="card-body">
+                    <br /><br />
+                    <a asp-controller="Experiences" asp-action="Index"><h1>مدیریت تجارب</h1></a>
+                    <br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+   

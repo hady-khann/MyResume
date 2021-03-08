@@ -1,0 +1,2 @@
+First Import DataBase Throw Clicking on DataBase
+And Choose Import Data-tier Application

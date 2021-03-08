@@ -1,0 +1,42 @@
+﻿@model MyResume.Models.Educations
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/_Layout.cshtml";
+}
+
+<div class="card col-md-4" style="margin-top:3%;margin-left:32%; ">
+    <div class="card-header">
+        ویرایش مقاله
+    </div>
+    <div class="card-body">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Explain1" class="control-label"></label>
+                <input asp-for="Explain1" class="form-control" />
+                <span asp-validation-for="Explain1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Explain2" class="control-label"></label>
+                <input asp-for="Explain2" class="form-control" />
+                <span asp-validation-for="Explain2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <div class="btn btn-primary" style="margin-left:45%;margin-top:1%">
+        <a style="color:black" asp-action="Index">Back to List</a>
+    </div>
+</div>
+

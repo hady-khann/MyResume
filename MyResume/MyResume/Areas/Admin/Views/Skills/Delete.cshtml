@@ -1,0 +1,40 @@
+﻿@model MyResume.Models.Skills
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Admin/Views/_Layout.cshtml";
+}
+
+<div class="card col-md-4" style="margin-top:3%;margin-left:32%; ">
+    <div class="card-header">
+        آیا از حذف این رکورد مطمئن هستید ؟؟
+    </div>
+    <div class="card-body">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Percentage)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Percentage)
+            </dd>
+        </dl>
+        
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <input type="submit" value="Delete" class="btn btn-danger" /> |
+                <a class="btn btn-primary" asp-action="Index">Back to List</a>
+            </form>
+    </div>
+</div>
